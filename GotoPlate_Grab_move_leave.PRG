@@ -50,7 +50,7 @@ ENDSUB
 
 ;*************************
 SUB 6          ; Go to upper Z
-Z18000
+Z24900
 WAITZ
 ENDSUB 
 
