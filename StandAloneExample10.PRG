@@ -1,0 +1,65 @@
+;*************************
+PRG 1
+GOSUB 2
+GOSUB 7
+WHILE 1 = 1
+ GOSUB 4
+ GOSUB 2
+ GOSUB 5
+ DELAY=5000
+ GOSUB 1
+ENDWHILE 
+END
+
+;*************************
+SUB 1
+DO3=1
+DELAY=100
+ENDSUB 
+;*************************
+SUB 2
+DO3=0
+DELAY=100
+ENDSUB 
+;*************************
+SUB 7
+HSPD=15000
+LSPD=500
+ACC=100
+EO=7
+HOMEZ-6
+WAITZ
+HOMEY-6
+WAITY
+HOMEX-6
+WAITX
+ENDSUB 
+;*************************
+SUB 31
+SR1=0
+SR3=0
+ABORT
+ECLEARX
+ECLEARY
+ECLEARZ
+DO3=1
+ENDSUB 
+;*************************
+SUB 4
+Z10000
+Y20000
+X20000
+WAITZ
+WAITY
+WAITX
+ENDSUB 
+;*************************
+SUB 5
+Z0
+Y0
+X0
+WAITZ
+WAITY
+WAITX
+ENDSUB 
+
